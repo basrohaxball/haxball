@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Guide - Haxball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        Development Guide - Haxball Update
+    </header>
+
+    <div class="container">
+        <section class="page">
+            <h1>Introduction</h1>
+            <p>
+                This guide will help you understand the development process behind the latest Haxball update. 
+                Here, we will explore key changes, gameplay improvements, and other essential information you need to know about the game.
+            </p>
+            <h2>Estimated Release Date</h2>
+            <p>
+                The release is expected between December 25 and January 1. Additional progress updates will be shared with the Developers group via Gmail in the coming days.
+            </p>
+        </section>
+
+        <section class="page">
+            <h1>New Features</h1>
+            <h2>1. Graphical Changes</h2>
+            <p>
+                Adjustments have been made to the thickness of lines on the game canvas, enhancing visibility and the clarity of in-game elements. It will be modifiable in the settings.
+            </p>
+            <img src="image.png" alt="Graphical Improvements in Haxball">
+
+            <h2>2. Map Forum and Color Customization</h2>
+            <p>
+                You can now share and download custom maps directly from the new forum. Additional options for visually customizing team colors have also been added.
+            </p>
+            <img src="image2.png" alt="Map Forum and Customization">
+            
+            <h2>3. Developer Tools</h2>
+            <p>
+                New functionalities will be added to <a href="https://www.haxball.com/headless">https://www.haxball.com/headless</a> to facilitate room and map creation:
+            </p>
+            <ul>
+                <li><b>setPlayerVelocity(playerId : Int, velocity : float)</b> : Allows individual players in the room to have custom velocities.</li>
+                <li><b>getPlayerAvatar(playerId: Int)</b> : Retrieves the avatar of a player.</li>
+            </ul>
+            
+            <h2>4. Map Creation Enhancements</h2>
+            <p>
+                Map creation will be easier with the following implementations:
+            </p>
+            <ul>
+                <li><b>fills : Fill[]</b> : Allows areas between multiple lines to be filled with a color.</li>
+                <li><b>z : float</b> : Objects can now easily appear above or below other objects using a layer-based system.</li>
+            </ul>
+            <p>
+                Details on implementation will be provided in the <a href="https://github.com/haxball/haxball-issues/wiki/Headless-Host">Haxball Headless Documentation</a>.
+            </p>
+        </section>
+
+        <section class="page">
+            <h1>Additional Information</h1>
+            <h2>Legacy</h2>
+            <p>First released in December 2010, HaxBall was originally implemented using the flash player and used RTMFP to create peer 2 peer connections in a way similar to WebRTC. Unfortunately flash player has been discontinued and so the move to HTML5 was required.</p>
+            <h2>Author</h2>
+            <p>HaxBall is made by Mario Carbajal (aka basro). Special thanks to my brother, gliptic, qualo and jonsul for their miscellaneous help.</p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        © 2024 Haxball Developers | <a href="https://www.haxball.com/">www.haxball.com</a>
+    </footer>
+</body>
+</html>
